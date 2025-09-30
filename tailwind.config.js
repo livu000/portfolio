@@ -76,7 +76,8 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
-        serif: ["Roboto", "serif"],
+        inter: ["Inter", "sans-serif"],
+        roboto: ["Roboto", "serif"],
       },
     },
   },
