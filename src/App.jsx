@@ -1,9 +1,13 @@
 import React from 'react';
 import Home from './pages/Home';
+import { Button } from './components/ui/button';
 
 function App() {
   return (
-    <Home />
+    <div>
+      <Home />
+      <Button>Click me</Button>
+    </div>
   );
 }
 
