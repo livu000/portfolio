@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from 'lucide-react';
 
 const projects = [
   {
@@ -23,7 +24,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 sm:py-32 bg-secondary/50">
+    <section id="projects" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
@@ -33,15 +34,20 @@ export function Projects() {
             A collection of my recent projects.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {projects.map((project) => (
-            <div key={project.title} className="bg-card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:-translate-y-2 duration-300 ease-in-out">
-              <img src={project.image} alt={project.title} className="w-full h-56 object-cover" />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-foreground mb-2">{project.title}</h3>
-                <p className="text-muted-foreground mb-6">{project.description}</p>
-                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-300">
-                  <a href={project.link}>View Project</a>
+            <div key={project.title} className="bg-card rounded-2xl shadow-2xl overflow-hidden group">
+              <div className="overflow-hidden">
+                <img src={project.image} alt={project.title} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" />
+              </div>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-3">{project.title}</h3>
+                <p className="text-muted-foreground mb-6 h-24">{project.description}</p>
+                <Button asChild size="lg" className="w-full sm:w-auto shadow-lg transform transition-transform hover:scale-105">
+                  <a href={project.link} className="flex items-center justify-center">
+                    View Project
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </a>
                 </Button>
               </div>
             </div>
