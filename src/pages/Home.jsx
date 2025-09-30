@@ -1,19 +1,17 @@
 import React from 'react';
-import Navbar from '../components/layout/Navbar';
-import Hero from '../sections/Hero';
-import About from '../sections/About';
-import Skills from '../sections/Skills';
-import Projects from '../sections/Projects';
-import Contact from '../sections/Contact';
-import Footer from '../components/layout/Footer';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Header />
       <Hero />
       <About />
-      <Skills />
       <Projects />
       <Contact />
       <Footer />

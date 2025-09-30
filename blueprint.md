@@ -1,47 +1,73 @@
-# AI Portfolio Blueprint
+# Project Blueprint
 
 ## Overview
 
-This document outlines the structure, design, and features of a modern, responsive, and visually appealing single-page portfolio website. The portfolio is built with React and Tailwind CSS and is designed to be easily customizable.
+A personal portfolio website designed to showcase my skills, projects, and professional experience.
 
-## Project Structure
+## Design
 
-```
-src
-├── assets
-├── components
-│   └── layout
-│       ├── Footer.jsx
-│       └── Navbar.jsx
-├── pages
-│   └── Home.jsx
-└── sections
-    ├── About.jsx
-    ├── Contact.jsx
-    ├── Hero.jsx
-    ├── Projects.jsx
-    └── Skills.jsx
-```
-
-## Design and Styling
-
-*   **Frameworks:** React, Tailwind CSS
-*   **Icons:** `react-icons`
-*   **Layout:** Single-page with smooth scrolling
-*   **Responsiveness:** Fully responsive for mobile, tablet, and desktop devices
-*   **Color Palette:** A modern and clean color scheme with a primary accent color of purple.
+*   **Aesthetics:** Modern, clean, and visually balanced layout.
+*   **Responsiveness:** Fully responsive design that adapts to all screen sizes, ensuring a seamless experience on both mobile and web.
+*   **User Experience:** Intuitive navigation and interactive elements with smooth animations and effects.
+*   **Visual Elements:** High-quality images, icons, and a consistent color scheme.
 
 ## Features
 
-*   **Responsive Navbar:** A navigation bar that adapts to different screen sizes, with a hamburger menu for mobile devices.
-*   **Smooth Scrolling:** Clicking on a navigation link smoothly scrolls the user to the corresponding section.
-*   **Engaging Hero Section:** A full-screen hero section with a background image, a compelling headline, and a call-to-action button.
-*   **Two-Column About Section:** A visually balanced `About Me` section with a profile picture and a brief bio.
-*   **Icon-Based Skills Section:** A grid-based layout showcasing skills with corresponding icons for easy recognition.
-*   **Card-Based Projects Section:** A clean and organized way to display projects, each with an image, title, description, and links to the live demo and source code.
-*   **User-Friendly Contact Form:** A simple and intuitive contact form with social media links to encourage connection.
-*   **Clean Footer:** A minimalist footer with a copyright notice.
+*   **Header:** A sticky header with a logo and navigation links to all sections of the page.
+*   **Hero Section:** A brief and impactful introduction with a headline, subheadline, and a call-to-action button.
+*   **About Section:** A detailed section about my skills, experience, and passion for development.
+*   **Projects Section:** A showcase of my best work, with project cards that include a title, description, and links to the live project and source code.
+*   **Contact Section:** A simple and user-friendly contact form for visitors to get in touch with me.
+*   **Footer:** A footer with copyright information and links to my social media profiles.
 
-## Current Status
+## Tech Stack
 
-The portfolio is complete and fully functional. The code is modular, and the design is consistent and modern. The placeholder content can be easily replaced with your own information.
+*   **Frontend:** React
+*   **Styling:** Tailwind CSS
+*   **Component Library:** Shadcn/UI
+
+## Development Plan
+
+1.  **Project Setup:**
+    *   Initialize a new React project with Vite.
+    *   Install and configure Tailwind CSS.
+    *   Set up Shadcn/UI.
+    *   Configure ESLint and Prettier for code quality.
+
+2.  **Component Creation:**
+    *   Create a `components` folder to store all reusable components.
+    *   Build the following components:
+        *   `Header.jsx`
+        *   `Hero.jsx`
+        *   `About.jsx`
+        *   `Projects.jsx`
+        *   `Contact.jsx`
+        *   `Footer.jsx`
+
+3.  **Page Structure:**
+    *   Create a `pages` folder to store all pages.
+    *   Create a `Home.jsx` page to serve as the main landing page.
+    *   Move the existing code from `src/App.jsx` to `src/pages/Home.jsx`.
+    *   Implement routing using `react-router-dom` to handle navigation.
+    *   Create a `404.jsx` page for handling not-found routes.
+
+4.  **Styling and Theming:**
+    *   Apply a consistent and modern design using Tailwind CSS and Shadcn/UI.
+    *   Create a custom theme to match the desired color palette and typography.
+    *   Ensure all components are fully responsive and accessible.
+
+5.  **Static Assets:**
+    *   Create a `public` folder for all static assets.
+    *   Add high-quality images and a favicon.
+    *   Create a `robots.txt` and `sitemap.xml` for SEO.
+
+6.  **Firebase Integration:**
+    *   Initialize a Firebase project.
+    *   Set up Firestore to store contact form submissions.
+    *   Create a serverless function to handle form submissions.
+    *   Deploy the application to Firebase Hosting.
+
+7.  **Final Touches:**
+    *   Add a `manifest.json` for PWA capabilities.
+    *   Add SEO metadata to all pages.
+    *   Perform a final code review and cleanup.
