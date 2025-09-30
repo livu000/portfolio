@@ -2,7 +2,7 @@ import { Heart, Twitter, Github, Linkedin, Dribbble } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-secondary/50 py-6">
+    <footer className="bg-secondary/50 dark:bg-card py-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="flex items-center text-muted-foreground text-center md:text-left mb-4 md:mb-0">

@@ -5,7 +5,7 @@ export function Hero() {
     <section id="hero" className="relative w-full min-h-screen flex items-center justify-center text-center bg-background">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10"></div>
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 animate-fade-in-up">
-        <p className="text-lg font-medium text-primary mb-2 sm:text-xl md:text-2xl font-roboto">
+        <p className="text-lg font-medium text-primary dark:text-white mb-2 sm:text-xl md:text-2xl font-roboto">
           Hello, I'm
         </p>
         <h1 className="text-5xl font-extrabold tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl font-inter">
