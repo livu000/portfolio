@@ -26,41 +26,43 @@ const skills = [
 
 export function About() {
   return (
-    <section id="about" className="py-20 sm:py-28 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-            About Me
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80 sm:text-xl font-roboto">
-            A passionate developer who loves building beautiful and functional web experiences.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-          <div className="lg:col-span-2 bg-card p-8 rounded-2xl shadow-lg space-y-6 border border-transparent hover:border-primary transition-all duration-300">
-            <h3 className="text-2xl font-bold text-foreground sm:text-3xl">Who I Am</h3>
-            <p className="text-lg text-foreground/80 font-roboto">
-              I am a front-end developer based in New York, with a passion for web design and creating for web and mobile devices. I am a self-taught developer who is always eager to learn new things and solve complex problems.
-            </p>
-            <p className="text-lg text-foreground/80 font-roboto">
-              I am always on the lookout for new and exciting projects. If you have a project in mind, I would love to hear from you.
+    <div className="group">
+      <section id="about" className="py-20 sm:py-28 bg-background border-b border-transparent group-hover:border-black dark:group-hover:border-white transition-colors duration-300">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
+              About Me
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80 sm:text-xl font-roboto">
+              A passionate developer who loves building beautiful and functional web experiences.
             </p>
           </div>
-          <div className="lg:col-span-3 bg-card p-8 rounded-2xl shadow-lg border border-transparent hover:border-primary transition-all duration-300">
-            <h3 className="text-2xl font-bold text-foreground sm:text-3xl mb-6">My Skills</h3>
-            <div className="grid grid-cols-4 gap-4">
-              {skills.map((skill) => (
-                <div key={skill.name} className="group bg-background/50 border border-border/50 rounded-lg p-4 flex flex-col items-center justify-center gap-2 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:bg-primary/10">
-                  {skill.icon}
-                  <span className="text-sm font-semibold text-foreground/80 group-hover:text-foreground">
-                    {skill.name}
-                  </span>
-                </div>
-              ))}
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+            <div className="lg:col-span-2 bg-card p-8 rounded-2xl shadow-lg space-y-6 border border-transparent hover:border-primary transition-all duration-300">
+              <h3 className="text-2xl font-bold text-foreground sm:text-3xl">Who I Am</h3>
+              <p className="text-lg text-foreground/80 font-roboto">
+                I am a front-end developer based in New York, with a passion for web design and creating for web and mobile devices. I am a self-taught developer who is always eager to learn new things and solve complex problems.
+              </p>
+              <p className="text-lg text-foreground/80 font-roboto">
+                I am always on the lookout for new and exciting projects. If you have a project in mind, I would love to hear from you.
+              </p>
+            </div>
+            <div className="lg:col-span-3 bg-card p-8 rounded-2xl shadow-lg border border-transparent hover:border-primary transition-all duration-300">
+              <h3 className="text-2xl font-bold text-foreground sm:text-3xl mb-6">My Skills</h3>
+              <div className="grid grid-cols-4 gap-4">
+                {skills.map((skill) => (
+                  <div key={skill.name} className="group bg-background/50 border border-border/50 rounded-lg p-4 flex flex-col items-center justify-center gap-2 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:bg-primary/10">
+                    {skill.icon}
+                    <span className="text-sm font-semibold text-foreground/80 group-hover:text-foreground">
+                      {skill.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

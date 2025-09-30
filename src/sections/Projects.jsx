@@ -42,36 +42,38 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 sm:py-28 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-            My Work
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80 sm:text-xl font-roboto">
-            A collection of my most recent and impactful projects.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div key={project.title} className="bg-card rounded-2xl shadow-lg overflow-hidden group border border-transparent hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
-              <div className="overflow-hidden">
-                <img src={project.image} alt={project.title} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out" />
+    <div className="group">
+      <section id="projects" className="py-20 sm:py-28 bg-background border-b border-transparent group-hover:border-black dark:group-hover:border-white transition-colors duration-300">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
+              My Work
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80 sm:text-xl font-roboto">
+              A collection of my most recent and impactful projects.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <div key={project.title} className="bg-card rounded-2xl shadow-lg overflow-hidden group border border-transparent hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+                <div className="overflow-hidden">
+                  <img src={project.image} alt={project.title} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-2">{project.title}</h3>
+                  <p className="text-foreground/80 font-roboto mb-4 h-24">{project.description}</p>
+                  <Button asChild size="default" className="w-full sm:w-auto shadow-md transform transition-transform hover:scale-105 bg-primary/90 hover:bg-primary">
+                    <a href={project.link} className="flex items-center justify-center">
+                      View Project
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </a>
+                  </Button>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">{project.title}</h3>
-                <p className="text-foreground/80 font-roboto mb-4 h-24">{project.description}</p>
-                <Button asChild size="default" className="w-full sm:w-auto shadow-md transform transition-transform hover:scale-105 bg-primary/90 hover:bg-primary">
-                  <a href={project.link} className="flex items-center justify-center">
-                    View Project
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </a>
-                </Button>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
