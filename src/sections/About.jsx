@@ -1,34 +1,33 @@
 export function About() {
   return (
-    <section id="about" className="py-16 md:py-24 lg:py-32">
+    <section id="about" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
             About Me
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            A passionate developer with a love for creating beautiful and functional web experiences.
+          <p className="mt-4 text-xl text-muted-foreground">
+            A passionate developer who loves building beautiful and functional web experiences.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
-          <div>
-            <h3 className="text-2xl font-bold text-foreground">Who I am</h3>
-            <p className="mt-4 text-muted-foreground">
-              I am a front-end developer based in New York. I have a passion for web design and love to create for web and mobile devices. I am a self-taught developer with a passion for learning new things and solving problems.
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h3 className="text-3xl font-bold text-foreground">Who I Am</h3>
+            <p className="text-lg text-muted-foreground">
+              I am a front-end developer based in New York, with a passion for web design and creating for web and mobile devices. I am a self-taught developer who is always eager to learn new things and solve complex problems.
             </p>
-            <p className="mt-4 text-muted-foreground">
-              I am always looking for new and exciting projects to work on. If you have a project in mind, I would love to hear from you.
+            <p className="text-lg text-muted-foreground">
+              I am always on the lookout for new and exciting projects. If you have a project in mind, I would love to hear from you.
             </p>
           </div>
-          <div>
-            <h3 className="text-2xl font-bold text-foreground">Skills</h3>
-            <div className="mt-4 flex flex-wrap gap-4">
-              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">React</span>
-              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
-              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">TypeScript</span>
-              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
-              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Tailwind CSS</span>
-              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Firebase</span>
+          <div className="space-y-6">
+            <h3 className="text-3xl font-bold text-foreground">My Skills</h3>
+            <div className="flex flex-wrap gap-4">
+              {['React', 'JavaScript', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Firebase'].map((skill) => (
+                <span key={skill} className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-base font-semibold shadow-md transform transition-transform hover:scale-110">
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
         </div>
