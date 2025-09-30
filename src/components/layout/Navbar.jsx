@@ -9,7 +9,7 @@ export const Navbar = ({ toggleTheme }) => {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <a href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold text-lg sm:inline-block font-serif">Portfolio</span>
+          <span className="font-bold text-lg sm:inline-block font-serif">Home</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-base lg:gap-8">
           <a href="#about" className="text-foreground/60 transition-colors hover:text-foreground/80 font-medium">

@@ -10,13 +10,13 @@ export function Hero() {
             Hello, I'm
           </p>
           <h1 className="text-5xl font-extrabold tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl font-inter">
-            <span className="block">John Doe</span>
+            <span className="block">VISHWANATH VASAVA</span>
           </h1>
           <h2 className="text-3xl font-bold text-secondary-foreground sm:text-4xl md:text-5xl mt-2">
-            <span className="block">Creative Developer</span>
+            <span className="block">Web-Sites Developer</span>
           </h2>
           <p className="mt-6 max-w-lg mx-auto text-lg text-foreground/90 sm:text-xl md:mt-8 md:max-w-2xl font-roboto">
-            I design and build beautiful, user-friendly web applications with a passion for creating amazing user experiences.
+          “I design and develop modern, user-friendly websites with the help of <b>AI</b> to bring ideas to life faster and smarter."
           </p>
           <div className="mt-8 max-w-md mx-auto flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" asChild className="shadow-lg transform transition-transform hover:scale-105">
