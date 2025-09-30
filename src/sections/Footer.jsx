@@ -7,7 +7,7 @@ export function Footer() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="flex items-center text-muted-foreground text-center md:text-left mb-4 md:mb-0">
-              Made with <Heart className="w-4 h-4 mx-1.5 text-red-500" /> by John Doe
+              Made with <Heart className="w-4 h-4 mx-1.5 text-red-500" /> by Vishwanath Vasava
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -24,7 +24,7 @@ export function Footer() {
               </a>
             </div>
             <p className="text-muted-foreground mt-4 md:mt-0">
-              &copy; {new Date().getFullYear()} John Doe. All rights reserved.
+              &copy; {new Date().getFullYear()} Vishwanath Vasava. All rights reserved.
             </p>
           </div>
         </div>

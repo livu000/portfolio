@@ -24,15 +24,15 @@ export function Contact() {
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">
                       <Mail className="w-6 h-6 text-primary" />
-                      <span className="text-lg text-foreground/80 font-roboto">your.email@example.com</span>
+                      <span className="text-lg text-foreground/80 font-roboto">vasavavishwanath00@gmail.com</span>
                     </div>
                     <div className="flex items-center gap-4">
                       <Phone className="w-6 h-6 text-primary" />
-                      <span className="text-lg text-foreground/80 font-roboto">+1 (555) 123-4567</span>
+                      <span className="text-lg text-foreground/80 font-roboto">+91 9313960079</span>
                     </div>
                     <div className="flex items-center gap-4">
                       <MapPin className="w-6 h-6 text-primary" />
-                      <span className="text-lg text-foreground/80 font-roboto">New York, USA</span>
+                      <span className="text-lg text-foreground/80 font-roboto">At.Jhank, Ta.Dediapada, Di.Narmada, Gujarat, India 393130</span>
                     </div>
                   </div>
                 </div>
