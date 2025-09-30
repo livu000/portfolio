@@ -4,18 +4,18 @@ import { Button } from "@/components/ui/button";
 export const Navbar = ({ toggleTheme }) => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
+      <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <a href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold sm:inline-block">Portfolio</span>
+          <span className="font-bold text-lg sm:inline-block font-serif">Portfolio</span>
         </a>
-        <nav className="flex items-center gap-4 text-sm lg:gap-6">
-          <a href="#about" className="text-foreground/60 transition-colors hover:text-foreground/80">
+        <nav className="flex items-center gap-6 text-base lg:gap-8">
+          <a href="#about" className="text-foreground/60 transition-colors hover:text-foreground/80 font-medium">
             About
           </a>
-          <a href="#projects" className="text-foreground/60 transition-colors hover:text-foreground/80">
+          <a href="#projects" className="text-foreground/60 transition-colors hover:text-foreground/80 font-medium">
             Projects
           </a>
-          <a href="#contact" className="text-foreground/60 transition-colors hover:text-foreground/80">
+          <a href="#contact" className="text-foreground/60 transition-colors hover:text-foreground/80 font-medium">
             Contact
           </a>
           <Button variant="ghost" size="icon" onClick={toggleTheme}>
