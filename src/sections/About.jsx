@@ -49,7 +49,7 @@ export function About() {
             </div>
             <div className="lg:col-span-3 bg-card p-8 rounded-2xl shadow-lg border border-transparent hover:border-primary transition-all duration-300">
               <h3 className="text-2xl font-bold text-foreground sm:text-3xl mb-6">My Skills</h3>
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {skills.map((skill) => (
                   <div key={skill.name} className="group bg-background/50 border border-border/50 rounded-lg p-4 flex flex-col items-center justify-center gap-2 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:bg-primary/10">
                     {skill.icon}
