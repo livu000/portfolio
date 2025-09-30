@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
@@ -15,11 +15,11 @@ export function Contact() {
             Have a project in mind or just want to say hi? I'd love to hear from you.
           </p>
         </div>
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-card p-8 rounded-2xl shadow-lg border border-border/20">
-            <div className="space-y-8">
+        <div className="max-w-4xl mx-auto bg-card p-8 rounded-2xl shadow-lg border border-border/20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="flex flex-col justify-center space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Contact Information</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Contact Details</h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <Mail className="w-6 h-6 text-primary" />
@@ -29,15 +29,17 @@ export function Contact() {
                     <Phone className="w-6 h-6 text-primary" />
                     <span className="text-lg text-foreground/80 font-roboto">+1 (555) 123-4567</span>
                   </div>
+                  <div className="flex items-center gap-4">
+                    <MapPin className="w-6 h-6 text-primary" />
+                    <span className="text-lg text-foreground/80 font-roboto">New York, USA</span>
+                  </div>
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Follow Me</h3>
-                <div className="flex gap-6">
-                  <a href="#" className="text-foreground/80 hover:text-primary transition-colors duration-300"><Github className="w-8 h-8" /></a>
-                  <a href="#" className="text-foreground/80 hover:text-primary transition-colors duration-300"><Linkedin className="w-8 h-8" /></a>
-                  <a href="#" className="text-foreground/80 hover:text-primary transition-colors duration-300"><Twitter className="w-8 h-8" /></a>
-                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Let's Connect</h3>
+                <p className="text-lg text-foreground/80 font-roboto">
+                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision. Feel free to reach out.
+                </p>
               </div>
             </div>
             <div className="space-y-6">
