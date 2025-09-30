@@ -1,25 +1,30 @@
-import React from 'react';
+import { Button } from "@/components/ui/button";
 
-const Hero = () => {
+export function Hero() {
   return (
-    <section 
-      id="hero" 
-      className="h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
-    >
-      <div className="text-center text-white bg-black bg-opacity-50 p-10 rounded-lg">
-        <h2 className="text-5xl font-extrabold mb-4">John Doe</h2>
-        <p className="text-2xl mb-8">AI Developer & Web Enthusiast</p>
-        <a 
-          href="#contact" 
-          onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-          className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition duration-300"
-        >
-          Get in Touch
-        </a>
+    <section id="hero" className="relative w-full h-screen flex items-center justify-center text-center">
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent"></div>
+      <div className="relative z-10 px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+          <span className="block">John Doe</span>
+          <span className="block text-primary">Creative Developer</span>
+        </h1>
+        <p className="mt-3 max-w-md mx-auto text-lg text-muted-foreground sm:text-xl md:mt-5 md:max-w-3xl">
+          I design and build beautiful and user-friendly web applications. I am passionate about creating amazing user experiences.
+        </p>
+        <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+          <div className="rounded-md shadow">
+            <Button asChild>
+              <a href="#contact">Get in Touch</a>
+            </Button>
+          </div>
+          <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+            <Button variant="outline" asChild>
+              <a href="#projects">View my work</a>
+            </Button>
+          </div>
+        </div>
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

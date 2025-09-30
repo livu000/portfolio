@@ -1,30 +1,38 @@
-import React from 'react';
-
-const About = () => {
+export function About() {
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">About Me</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-          <div className="md:w-1/3">
-            <img 
-              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-              alt="Profile" 
-              className="rounded-full shadow-lg w-64 h-64 object-cover mx-auto"
-            />
+    <section id="about" className="py-16 md:py-24 lg:py-32">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            About Me
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            A passionate developer with a love for creating beautiful and functional web experiences.
+          </p>
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
+          <div>
+            <h3 className="text-2xl font-bold text-foreground">Who I am</h3>
+            <p className="mt-4 text-muted-foreground">
+              I am a front-end developer based in New York. I have a passion for web design and love to create for web and mobile devices. I am a self-taught developer with a passion for learning new things and solving problems.
+            </p>
+            <p className="mt-4 text-muted-foreground">
+              I am always looking for new and exciting projects to work on. If you have a project in mind, I would love to hear from you.
+            </p>
           </div>
-          <div className="md:w-2/3 text-center md:text-left">
-            <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Hello! I'm John Doe, a passionate AI developer with a love for creating intuitive, dynamic, and beautiful web experiences. My journey into the world of programming began with a fascination for how technology can solve real-world problems. Today, I specialize in building intelligent applications with React, Node.js, and Firebase.
-            </p>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto mt-4">
-              When I'm not coding, you can find me exploring the latest advancements in artificial intelligence, contributing to open-source projects, or enjoying a good book.
-            </p>
+          <div>
+            <h3 className="text-2xl font-bold text-foreground">Skills</h3>
+            <div className="mt-4 flex flex-wrap gap-4">
+              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">React</span>
+              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">TypeScript</span>
+              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Tailwind CSS</span>
+              <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Firebase</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default About;
+}
