@@ -34,14 +34,14 @@ export function About() {
               About Me
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80 sm:text-xl font-roboto">
-              A passionate developer who loves building beautiful and functional web experiences.
+              A passionate developer who loves building beautiful and functional web applications.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             <div className="lg:col-span-2 bg-card p-8 rounded-2xl shadow-lg space-y-6 border border-transparent hover:border-primary transition-all duration-300">
               <h3 className="text-2xl font-bold text-foreground sm:text-3xl">Who I Am</h3>
               <p className="text-lg text-foreground/80 font-roboto">
-                I am a front-end developer based in New York, with a passion for web design and creating for web and mobile devices. I am a self-taught developer who is always eager to learn new things and solve complex problems.
+                I am a full-stack web developer based in India, with a passion for web design and creating for web and mobile devices. I am a self-taught developer who is always eager to learn new things and solve complex problems.
               </p>
               <p className="text-lg text-foreground/80 font-roboto">
                 I am always on the lookout for new and exciting projects. If you have a project in mind, I would love to hear from you.

@@ -13,7 +13,7 @@ export function Hero() {
             <span className="block">VISHWANATH VASAVA</span>
           </h1>
           <h2 className="text-3xl font-bold text-secondary-foreground sm:text-4xl md:text-5xl mt-2">
-            <span className="block">Web-Sites Developer</span>
+            <span className="block">Full-Stack Web Developer</span>
           </h2>
           <p className="mt-6 max-w-lg mx-auto text-lg text-foreground/90 sm:text-xl md:mt-8 md:max-w-2xl font-roboto">
           “I design and develop modern, user-friendly websites with the help of <b>AI</b> to bring ideas to life faster and smarter."
